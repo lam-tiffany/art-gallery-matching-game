@@ -1,0 +1,29 @@
+// Title Bar Styles
+.title-bar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    position: absolute;
+    top: 12%;
+
+    h2 {
+        font-size: 2.8em;
+        line-height: 1;
+        margin-bottom: 0;
+        align-self: center;
+    }
+}
+
+.game-stats {
+    font-size: 1.7em;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    .turns {
+        margin-right: 30px;
+    }
+    .turn-output,
+    .match-output {
+        display: inline-block;
+        width: 40px;
+    }
+}

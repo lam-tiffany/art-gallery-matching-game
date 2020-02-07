@@ -1,0 +1,21 @@
+// Resets
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, p {
+    margin-top: 0;
+}
+

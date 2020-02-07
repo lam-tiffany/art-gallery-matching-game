@@ -1,0 +1,43 @@
+.notify{  
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:0;  
+    box-sizing:border-box;
+    color:white;  
+    background: $brown;
+    text-align:center;
+    overflow:hidden;
+    box-sizing:border-box;
+    transition:height .2s;
+    font-size: 2em;
+  }
+  
+  #notifyType:before{
+    display:block;
+  }
+  
+  .active{  
+    height:50px;
+  }
+
+  .matched:before{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: $brown;
+    Content:"Aww Yeaaaaa! Excellent Job!";
+  }
+  .tenturns:before{
+    background: $red;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    Content:"Watch out! You have 10 turns left!";
+  }
+
+  .fifteenturns:before{
+    background: $red;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    Content:"Try harder! 5 turns left!";
+  }
+

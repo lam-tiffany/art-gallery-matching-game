@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+// Google Fonts Import
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,700|Orbitron:400,500,700,900&display=swap');
+
+// Utilities 
+@import 'variables';
+
+//Resets
+@import 'reset';
+@import 'type';
+
+// HTML Parts
+@import 'body';
+
+// Game Screens
+@import 'title-screen';
+@import 'game-screen';
+
+// Game Modules
+@import 'title-bar';
+@import 'game-board';
+@import 'card';
+@import 'buttons';
+@import 'notify';
+
+
+
+

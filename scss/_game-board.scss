@@ -1,0 +1,13 @@
+// Game Board Styles
+.game-board {
+    width: 1000px;
+    height: 500px;
+    padding: 30px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
+}

@@ -1,0 +1,18 @@
+// Title Screen Styles
+.title-screen {
+    display: flex;
+    height: 100vh;
+    background-image: url('../images/bg-artgallery.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        line-height: 1;
+        font-size: 6em;
+        margin-bottom: 0.3em;
+    }
+}

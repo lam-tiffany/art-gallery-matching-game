@@ -1,0 +1,44 @@
+// Game Typography Styles
+@font-face {
+    font-family: 'Bangla MN';
+    src: url('../font/Bangla-MN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body,
+button {
+    font-family: $body-font;
+    color: white;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+h1 {
+    font-family: $title-font;
+    text-decoration: none;
+    font-weight: 100;
+    color: $brown;
+    letter-spacing: 0.1em;
+}
+
+.title-screen h2 {
+    color: $red;
+    line-height: 80px;
+}
+
+h2, p {
+    font-family: $body-font;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+
+
+.hovertext:hover,
+.hovertext:focus,
+.hovertext:active {
+    color: $red;
+}

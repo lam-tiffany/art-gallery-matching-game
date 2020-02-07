@@ -1,0 +1,45 @@
+
+// Card Styles
+.card-container {
+  perspective: 200px;
+}
+
+.card {
+    border: 5px solid white; 
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 2px 4px rgba(146, 125, 78, 0.3);
+    cursor: pointer;
+    transition: transform 1.2s;
+    transform-style: preserve-3d; 
+    z-index: 1;
+}
+
+.card-cover {
+  position: absolute;
+    @at-root .open .card-cover {
+    transform: translateX(-100%);
+  }
+  backface-visibility: hidden;
+  --moz-backface-visibility: hidden;
+  --webkit-backface-visibility: hidden;
+  z-index: 2;
+}
+
+.card.open {
+  transform: rotateY(180deg);
+}
+
+
+// .card-face {
+//   position: absolute;
+//   backface-visibility: hidden;
+// }
+
+.card-image {
+  transform: rotateY(180deg);
+}
+
+
+
+
