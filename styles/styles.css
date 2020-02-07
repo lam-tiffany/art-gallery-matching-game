@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,700|Orbitron:400,500,700,900&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+body {
+  margin: 0; }
+
+h1, h2, p {
+  margin-top: 0; }
+
+@font-face {
+  font-family: 'Bangla MN';
+  src: url("../font/Bangla-MN.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body,
+button {
+  font-family: "Barlow Condensed", sans-serif;
+  color: white;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em; }
+
+h1 {
+  font-family: "Bangla MN", serif;
+  text-decoration: none;
+  font-weight: 100;
+  color: #cca267;
+  letter-spacing: 0.1em; }
+
+.title-screen h2 {
+  color: #dd5b5b;
+  line-height: 80px; }
+
+h2, p {
+  font-family: "Barlow Condensed", sans-serif;
+  text-decoration: none;
+  font-weight: 100; }
+
+.hovertext:hover,
+.hovertext:focus,
+.hovertext:active {
+  color: #dd5b5b; }
+
+body {
+  background-color: white;
+  height: 100vh;
+  overflow: hidden; }
+
+.title-screen {
+  display: flex;
+  height: 100vh;
+  background-image: url("../images/bg-artgallery.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .title-screen h1 {
+    line-height: 1;
+    font-size: 6em;
+    margin-bottom: 0.3em; }
+
+.game-screen {
+  height: 100vh;
+  background-image: url("../images/bg-artgallery.png");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.title-bar {
+  width: 70%;
+  position: absolute;
+  left: 15%; }
+
+.end-game {
+  position: absolute;
+  bottom: 3%;
+  right: 3%; }
+
+.title-bar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  position: absolute;
+  top: 12%; }
+  .title-bar h2 {
+    font-size: 2.8em;
+    line-height: 1;
+    margin-bottom: 0;
+    align-self: center; }
+
+.game-stats {
+  font-size: 1.7em;
+  display: flex;
+  justify-content: flex-end;
+  align-self: center; }
+  .game-stats .turns {
+    margin-right: 30px; }
+  .game-stats .turn-output,
+  .game-stats .match-output {
+    display: inline-block;
+    width: 40px; }
+
+.game-board {
+  width: 1000px;
+  height: 500px;
+  padding: 30px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px; }
+
+.card-container {
+  perspective: 200px; }
+
+.card {
+  border: 5px solid white;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 2px 4px rgba(146, 125, 78, 0.3);
+  cursor: pointer;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+  z-index: 1; }
+
+.card-cover {
+  position: absolute;
+  backface-visibility: hidden;
+  --moz-backface-visibility: hidden;
+  --webkit-backface-visibility: hidden;
+  z-index: 2; }
+  .open .card-cover {
+    transform: translateX(-100%); }
+
+.card.open {
+  transform: rotateY(180deg); }
+
+.card-image {
+  transform: rotateY(180deg); }
+
+.btn {
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5em;
+  color: #dd5b5b;
+  padding: 10px 90px;
+  text-align: center;
+  border-radius: 45%;
+  border: 0;
+  cursor: pointer; }
+
+.notify {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 0;
+  box-sizing: border-box;
+  color: white;
+  background: #cca267;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: height .2s;
+  font-size: 2em; }
+
+#notifyType:before {
+  display: block; }
+
+.active {
+  height: 50px; }
+
+.matched:before {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #cca267;
+  Content: "Aww Yeaaaaa! Excellent Job!"; }
+
+.tenturns:before {
+  background: #dd5b5b;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  Content: "Watch out! You have 10 turns left!"; }
+
+.fifteenturns:before {
+  background: #dd5b5b;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  Content: "Try harder! 5 turns left!"; }
+
+/*# sourceMappingURL=styles.css.map */
